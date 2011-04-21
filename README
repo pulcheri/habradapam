@@ -1,0 +1,45 @@
+
+The repo contains:
+
+	habradapam.lhs - 'HAskell BRAin DAmage PAckage Manager' source code
+			This is a very simple package manager that allows you to install/remove packages. It supports dependencies 
+			when istalling. I.e. if you are installing pk1 that depends on pk2, it will try to install pk2 first. And if
+			pk2 in its turn depends on pk3, it will try to install pk3 and so on.
+			
+			To invoke a program from ghci, just type: ':l habradapam.lhs' and then type 'main' to run main function.
+			After that program will prompt user for input. To view the list of commands press 'h'.
+			
+			Examples of use (after invoking 'main'):
+				'i gcc' - this command installs 'gcc' package, note that there is no need to specify full package name
+						like 'sys-lib/gcc-421'. HABRADAPAM will locate it automatically in world 
+						list and install.			
+				'r gcc' - removes gcc package if it is installed. Will do nothing otherwise.
+				'q' - quits the processing.
+
+	available.txt - text file containig "world" list of packages, i.e. all packages that are available for install.
+			MUST BE IN THE SAME DIRECTORY with habradapam.lhs!
+			If a package is not in this list you can not install/delete (do anything on) it.
+			The file is being read every time you run 'main' function of the program.
+			All entries should be formatted properly so that program could parse it.
+			Format is the following:
+			<package>;<dep>;<description><CR>
+				where:
+					<package> = <word>-<word>/<alphanum>-<version>
+							<word> - any number of Latin letters - parsed by parser 'word'
+							<alphanum> - any number of alphanumerals
+							<version> - refer to 'versions' parser
+					<dep>	  = refer to 'dpdlsp' parser; it supports binary operators, 
+							use flags (although there is support for them in the program, 
+							they are not used as I am not familiar with them.)
+					<description> = any number of following characters " .,?!-+0123456789£$%^&*()~#':@"
+							This is just a description of the package.
+					<CR>	  = One or more new line characters.
+	readme.txt - this file
+
+
+References:
+[1] Richard Bird. Introduction to Functional Programming using Haskell. Second Edition. - Prentice Hall Europe, 1998
+[2] Chris Okasaki. Purely Functional Data Structures. - Cambridge University Press, 1999
+[3] Chris Reade. Elements of Functional Programming. - Addison-Wesley, 1989
+
+-- Igor "iggy montonero" Makaruks
