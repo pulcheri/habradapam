@@ -1,0 +1,18 @@
+sys-net/pybt-342;sys-python/python-(>= 230);Scatter-gather network file transfer BitTorrent is a tool for distributing files. It's extremely easy to use - downloads are started by clicking on hyperlinks.
+
+sys-python/python-251;sys-python/pythonminimal-(>= 250);An interactive high-level object-oriented language (default version) Python, the high-level,interactive object oriented language, includes an extensive class library with lots of goodies for network programming, system administration, soundsand graphics.
+
+sys-python/pythonminimal-251;sys-admin/dpkg-(>= 1132);A minimal subset of the Python language (default version)
+
+sys-admin/dpkg-1145;sys-lib/libc6-(>= 261) && sys-utils/coreutils-(>= 593);package maintenance system for Debian
+
+sys-lib/libc6-261;sys-lib/gcc-(>=400);GNU C Library  Shared libraries Contains the standard libraries that are used by nearly all programs on the system.
+
+sys-lib/gcc-421;;The GNU Compiler Collection (base package) This package contains files common to all languages and libraries contained in the GNU Compiler Collection (GCC).
+
+sys-utils/coreutils-597;sys-lib/libc6-(>= 261) && sys-lib/libselinux1-(>= 2015);The GNU core utilities This package contains the essential basic system utilities.
+
+sys-lib/libselinux1-2015;sys-lib/libc6-(>= 255);SELinux shared libraries This package provides the shared libraries for Security-enhanced Linux. Securityenhanced Linux is a patch of the Linux kernel and a number of utilities with enhanced security functionality designed to add mandatory access controls to Linux.
+
+
+
