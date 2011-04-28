@@ -1,5 +1,4 @@
-
-The repo contains:
+Contents:
 
 	habradapam.lhs - 'HAskell BRAin DAmage PAckage Manager' source code
 			This is a very simple package manager that allows you to install/remove packages. It supports dependencies 
