@@ -1,4 +1,12 @@
-Contents:
+
+Authors
+=======
+
+Igor Makaruks
+
+
+Contents
+========
 
 	habradapam.lhs - 'HAskell BRAin DAmage PAckage Manager' source code
 			This is a very simple package manager that allows you to install/remove packages. It supports dependencies 
@@ -36,9 +44,10 @@ Contents:
 	readme.txt - this file
 
 
-References:
+References
+==========
 [1] Richard Bird. Introduction to Functional Programming using Haskell. Second Edition. - Prentice Hall Europe, 1998
 [2] Chris Okasaki. Purely Functional Data Structures. - Cambridge University Press, 1999
 [3] Chris Reade. Elements of Functional Programming. - Addison-Wesley, 1989
 
--- Igor "iggy montonero" Makaruks
+
